@@ -8,7 +8,10 @@
     <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
     <style>
-    body {
+    body , .foot a{
+        color: aliceblue;
+    }
+    body{
         background-color: rgb(69, 236, 69);
     }
     .nv-b{
@@ -38,10 +41,13 @@
     .wh-cl{
         color: white;
     }
+    .foot{
+        background-color: rgb(1, 67, 8);
+    }
     </style>
 </head>
 
-<body>
+<body class="bg-success">
     <!-- Nav Bar -->
 
     <nav class="navbar navbar-expand-lg navbar-dark  nv-b">
@@ -120,7 +126,7 @@
 
             <!-- Content Frame -->
             <div class="col-md-6">
-                <iframe id="bookContentFrame" style="width:100%;height:300px;"></iframe>
+                <iframe id="bookContentFrame" style="width:100%;height:300px;border: 2px solid black;"></iframe>
             </div>
         </div>
 
@@ -144,44 +150,44 @@
     </section>
 
     <!-- Footer Content -->
-<footer class="bg-light py-5">
-    <div class="container">
-        <div class="row">
-            <!-- About Section -->
-            <div class="col-md-4">
-                <h5>About Aman Jha Book Recommendation</h5>
-                <p>Founded in 2023 by Aman Jha, our platform offers insightful book recommendations for avid readers. Dive into our curated lists and enrich your reading journey!</p>
+    <footer class="foot py-5">
+        <div class="container">
+            <div class="row">
+                <!-- About Section -->
+                <div class="col-md-4">
+                    <h5>About Aman Jha Book Recommendation</h5>
+                    <p>Founded in 2023 by Aman Jha, our platform offers insightful book recommendations for avid readers. Dive into our curated lists and enrich your reading journey!</p>
+                </div>
+
+                <!-- Contact Information -->
+                <div class="col-md-4">
+                    <h5>Contact Information</h5>
+                    <ul class="list-unstyled">
+                        <li>Email: aman.jha_cs21@gla.ac.in</li>
+                        <li>Phone: +91 8941951465</li>
+                        <li>Address: 123 Reading Lane, Booktown, India</li>
+                    </ul>
+                </div>
+
+                <!-- Quick Links -->
+                <div class="col-md-4">
+                    <h5>Quick Links</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">Service</a></li>
+                        <li><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
             </div>
 
-            <!-- Contact Information -->
-            <div class="col-md-4">
-                <h5>Contact Information</h5>
-                <ul class="list-unstyled">
-                    <li>Email: aman.jha_cs21@gla.ac.in</li>
-                    <li>Phone: +91 8941951465</li>
-                    <li>Address: 123 Reading Lane, Booktown, India</li>
-                </ul>
-            </div>
-
-            <!-- Quick Links -->
-            <div class="col-md-4">
-                <h5>Quick Links</h5>
-                <ul class="list-unstyled">
-                    <li><a href="#">Home</a></li>
-                    <li><a href="#">Service</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                </ul>
+            <!-- Copyright Information -->
+            <div class="row mt-4">
+                <div class="col text-center">
+                    <p class="mb-0">© 2023 Aman Jha Book Recommendation. All rights reserved.</p>
+                </div>
             </div>
         </div>
-
-        <!-- Copyright Information -->
-        <div class="row mt-4">
-            <div class="col text-center">
-                <p class="mb-0">© 2023 Aman Jha Book Recommendation. All rights reserved.</p>
-            </div>
-        </div>
-    </div>
-</footer>
+    </footer>
 
     <!-- jQuery, Bootstrap JS, and Custom JS -->
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
