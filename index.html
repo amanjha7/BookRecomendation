@@ -17,6 +17,11 @@
     .nv-b{
         background-color: rgb(1, 67, 8);
         color: aliceblue;
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        z-index: 10;
     }
     .btn{
         border-radius:30px;
@@ -49,11 +54,10 @@
 
 <body class="bg-success">
     <!-- Nav Bar -->
-
     <nav class="navbar navbar-expand-lg navbar-dark  nv-b">
         <a class="navbar-brand" href="#">Aman Jha Book Recommendation</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon">ink</span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ml-auto"> <!-- ml-auto to push items to the right -->
@@ -235,7 +239,7 @@
                     `;
                     break;
             }
-
+            // here i want Document of iframe . and it has seprate document then our main Document i.e., DOM
             const iframeDoc = document.getElementById('bookContentFrame').contentDocument;
             iframeDoc.open();
             iframeDoc.write(content);
@@ -262,7 +266,7 @@
         currentRecommendationIndex = (currentRecommendationIndex + 1) % recommendations.length; // Cycle through the recommendations.
         }
 
-
+        //wait until whole html is parsed then call function in every 2 seconds.😎
         document.addEventListener("DOMContentLoaded", () => {
             setInterval(updateRecommendation, 2000); // Update every 2 seconds.
         });
