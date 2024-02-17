@@ -1,0 +1,137 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+.clock {
+    position: relative;
+    width: 200px;
+    height: 200px;
+    border: 2px solid #333;
+    border-radius: 50%;
+}
+
+.hand {
+    position: absolute;
+    background-color: #333;
+}
+
+.hour-hand {
+    width: 5px;
+    height: 40px;
+    top: 60px;
+    left: 96.5px;
+    transform-origin: 50% 100%;
+}
+
+.minute-hand {
+    width: 3px;
+    height: 60px;
+    top: 40px;
+    left: 98.5px;
+    transform-origin: 50% 100%;
+}
+
+.second-hand {
+    width: 1px;
+    height: 70px;
+    top: 30px;
+    left: 99.5px;
+    transform-origin: 50% 100%;
+    background-color: red;
+}
+
+.center-circle {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #333;
+    border-radius: 50%;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* ... (previous styles) ... */
+/*
+.numbers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+} */
+
+
+
+
+/* ... (previous styles) ... */
+
+/* ... (previous styles) ... */
+
+.numbers {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.number {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    font-weight: bold;
+    font-size: 16px;
+    position: absolute;
+}
+
+/* Calculate the positions of numbers using trigonometry */
+.number:nth-child(1) { top: 15%; left: 50%; }
+.number:nth-child(2) { top: 23%; left: 75%; }
+.number:nth-child(3) { top: 50%; left: 85%; }
+.number:nth-child(4) { top: 77%; left: 75%; }
+.number:nth-child(5) { top: 85%; left: 50%; }
+.number:nth-child(6) { top: 77%; left: 25%; }
+.number:nth-child(7) { top: 50%; left: 15%; }
+.number:nth-child(8) { top: 23%; left: 25%; }
+.number:nth-child(9) { top: 30%; left: 50%; }
+.number:nth-child(10) { top: 42%; left: 64%; }
+.number:nth-child(11) { top: 58%; left: 64%; }
+.number:nth-child(12) { top: 70%; left: 50%; }
+
+
+
+
+
+.number:nth-child(1) { transform: translate(-50%, -110px); }
+.number:nth-child(2) { transform: translate(35px, -85px); }
+.number:nth-child(3) { transform: translate(85px, -35px); }
+.number:nth-child(4) { transform: translate(110px, 0); }
+.number:nth-child(5) { transform: translate(85px, 35px); }
+.number:nth-child(6) { transform: translate(35px, 85px); }
+.number:nth-child(7) { transform: translate(0, 110px); }
+.number:nth-child(8) { transform: translate(-35px, 85px); }
+.number:nth-child(9) { transform: translate(-85px, 35px); }
+.number:nth-child(10) { transform: translate(-110px, 0); }
+.number:nth-child(11) { transform: translate(-85px, -35px); }
+.number:nth-child(12) { transform: translate(-35px, -85px); }
